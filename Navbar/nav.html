@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
+
+    
+</head>
+<body>
+
+    <div class="topnav" id="mytopnav">
+        <a href=""><img src="logo.png" alt="logo" style="width: 100px; height: 50px;"></a>
+        <a href="#home" class="active" id="dd">Home</a>
+        <a href="#news" id="dd">News</a>
+        <a href="#contact" id="dd">Contact</a>
+        <a href="#about" id="dd">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        
+        id="dd" >
+        <i class="fa fa-bars"></i>
+    
+    </a>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("mytopnav");
+            if(x.className === "topnav"){
+                x.className += " responsive";
+            }else{
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+
+
+    </div>
+    
+</body>
+</html>
